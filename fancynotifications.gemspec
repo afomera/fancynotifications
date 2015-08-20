@@ -10,11 +10,11 @@ Gem::Specification.new do |spec|
   spec.email         = ["andrew@zerlex.net"]
 
   spec.summary       = "Fancy Notifications for your Flash Messages"
-  spec.description   = "Fancy Notifications adds nice flash Notifications for your rails applications"
+  spec.description   = "Fancy Notifications adds nice CSS and JS effects to flash notices, so you don't have to."
   spec.homepage      = "https://github.com/king601/fancynotifications"
 
   spec.add_runtime_dependency 'sass', '>= 3.3.0'
-  spec.add_runtime_dependency 'font-awesome-rails'
+  
   # Dev Dependencies
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
