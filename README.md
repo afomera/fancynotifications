@@ -1,8 +1,6 @@
-# Fancynotifications
+# Fancy Notifications
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fancynotifications`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem was created to make better flash notifications in my Ruby on Rails applications. To use it follow the installation instructions below. Big thanks to [Mackenzie Child of Unicasts](http://unicasts.com) for inispiring and much of the CSS work in his screencasts. He did the majority of the brains, I just turned it into a gem and plan to add some additional features.
 
 ## Installation
 
@@ -22,7 +20,42 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+In your SCSS file add
+
+```scss
+ @import 'fancynotifications';
+```
+
+In your Javascript file
+
+```javascript
+//= require fancynotifications
+```
+
+To display the flash notifications in your application.html.erb( or whichever layout) file
+```erb
+<% flash.each do |key, value| %>
+  <div id="notice_wrapper">
+    <div class="<%= key %>">
+      <a class="alert_close">(X)</a>
+      <%= value %>
+    </div>
+  </div>
+<% end %>
+```
+
+The important thing to keep in mind is the Javascript looks for the notice_wrapper div and the alert_close class.
+
+The key allows us to style specific types of Flash notices in Rails. Such as "error", "notice", or "success".
+
+### Override Options
+To override the text color or background of the notifications add this above your SCSS import statement.
+
+```scss
+$notification_text: #FFFFFF;
+$notification_background: rgba(201, 70, 70, 0.85);
+
+```
 
 ## Development
 
