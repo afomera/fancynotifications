@@ -1,6 +1,6 @@
 # Fancy Notifications
 
-This gem was created to make better flash notifications in my Ruby on Rails applications. To use it follow the installation instructions below. Big thanks to [Mackenzie Child of Unicasts](http://unicasts.com) for inispiring and much of the CSS work in his screencasts. He did the majority of the brains, I just turned it into a gem and plan to add some additional features.
+This gem was created to make better flash notifications in my Ruby on Rails applications. To use it follow the installation instructions below. Big thanks to [Mackenzie Child of Unicasts](http://unicasts.com) for inspiring and much of the CSS work he showed in his screencasts. He did the majority of the brains, I just turned it into a gem and plan to add some additional features.
 
 ## Installation
 
@@ -49,7 +49,7 @@ The important thing to keep in mind is the Javascript looks for the notice_wrapp
 The key allows us to style specific types of Flash notices in Rails. Such as "error", "notice", or "success".
 
 ### Override Options
-To override the text color or background of the notifications add this above your SCSS import statement.
+To override the text color or background of the notifications add these variables above your SCSS import statement (before Fancy Notifications is imported).
 
 ```scss
 $notification_text: #FFFFFF;
