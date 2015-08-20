@@ -1,25 +1,26 @@
-$white: #FFFFFF;
+$notification_text: #FFFFFF !default;
+$notification_background: rgba(201, 70, 70, 0.85) !default;
 
 #notice_wrapper {
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 999;
-  background: rgba(201, 70, 70, 0.85);
+  background: $notification_background;
   .alert, .notice {
     padding: 2.5rem 0;
     text-align: center;
     margin: 0;
     font-size: 1.25rem;
     font-weight: 700;
-    color: #FFFFFF;
+    color: $notification_text;
     letter-spacing: 1px;
   }
   .alert_close {
     float: right;
     padding-right: 4rem;
     font-size: 1.35rem;
-    color: #FFFFFF;
+    color: $notification_text;
     text-decoration: none;
   }
 }
