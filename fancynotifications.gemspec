@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/king601/fancynotifications"
 
   spec.add_runtime_dependency 'sass', '>= 3.3.0'
-
+  spec.add_runtime_dependency 'font-awesome-rails'
   # Dev Dependencies
   spec.add_development_dependency "bundler", "~> 1.9"
   spec.add_development_dependency "rake", "~> 10.0"
